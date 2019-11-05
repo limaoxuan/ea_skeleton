@@ -1,1 +1,1 @@
-# ea_-skeleton
+# ea_skeleton
