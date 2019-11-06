@@ -1,0 +1,5 @@
+zuul:
+  routes:
+    test:
+      path: /test/**
+      url: http://ea-hellosb-service:8081/test/

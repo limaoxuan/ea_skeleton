@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ea_services" />
         <module name="ea_hellosb" />
+        <module name="ea_gateway" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ea_gateway" options="-parameters" />
       <module name="ea_hellosb" options="-parameters" />
     </option>
   </component>
