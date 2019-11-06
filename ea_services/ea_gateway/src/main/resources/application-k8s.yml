@@ -1,5 +1,11 @@
+excludeUrls: /user/login,/user/register
+authUrl: http://ea-auth-service:9999
+
 zuul:
   routes:
     test:
       path: /test/**
       url: http://ea-hellosb-service:8081/test/
+    user:
+      path: /user/**
+      url: http://ea-user-service:8082/user/

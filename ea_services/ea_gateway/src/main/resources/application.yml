@@ -1,5 +1,11 @@
+excludeUrls: /user/login,/user/register
+authUrl: http://localhost:9999
+
 zuul:
   routes:
     test:
       path: /test/**
       url: http://localhost:8081/test/
+    user:
+      path: /user/**
+      url: http://localhost:8082/user/

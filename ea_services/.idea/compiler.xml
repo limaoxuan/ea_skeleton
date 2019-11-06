@@ -6,16 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ea_services" />
+        <module name="ea_common" />
         <module name="ea_hellosb" />
         <module name="ea_gateway" />
+        <module name="ea_auth" />
+        <module name="ea_user" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ea_auth" options="-parameters" />
       <module name="ea_gateway" options="-parameters" />
       <module name="ea_hellosb" options="-parameters" />
+      <module name="ea_user" options="-parameters" />
     </option>
   </component>
 </project>

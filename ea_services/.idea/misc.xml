@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ea_hellosb/pom.xml" />
         <option value="$PROJECT_DIR$/ea_gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/ea_user/pom.xml" />
+        <option value="$PROJECT_DIR$/ea_auth/pom.xml" />
       </list>
     </option>
   </component>
