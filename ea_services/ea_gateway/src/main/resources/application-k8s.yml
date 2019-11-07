@@ -9,3 +9,6 @@ zuul:
     user:
       path: /user/**
       url: http://ea-user-service:8082/user/
+    product:
+      path: /api/product/**
+      url: http://ea-product-service:8083/product/

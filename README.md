@@ -6,11 +6,13 @@ MySQL Docker
 
 Redis	Docker
 
+Idea
+
 ------
 
 ### Deployment Environment 
 
-All in K8S
+All in K8S Minikube
 
 ------
 
