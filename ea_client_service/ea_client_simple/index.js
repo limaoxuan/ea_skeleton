@@ -3,8 +3,9 @@ $(function(){
         function success(res){
             console.log(res);
         },function fail(res){
-            console.log(res);
+            console.log("fail",res);
+            // window.location.href = 'login.html';
         });
 
-
+        productions.init_buyer();
 });

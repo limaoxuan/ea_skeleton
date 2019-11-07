@@ -56,6 +56,7 @@ public class UserController {
         map.put("token",response.getBody());
         map.put("role","user");
         map.put("email",user.getEmail());
+        map.put("uid",user.getId());
         return new Result(true,StatusCode.OK,"Login Suc",map);
     }
 

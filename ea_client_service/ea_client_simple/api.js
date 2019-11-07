@@ -2,24 +2,23 @@ let api = (function () {
     let apis = {
         login: "api/user/login",
         register: "api/user/register",
-        ping: "api/test/hello"
+        ping: "api/test/hello",
+        publish: "api/product/publish",
+        all_products: "api/product/all"
     }
     
 
     function getApiByName(apiName){
         if(apis[apiName]){
             return apis[apiName];
-        }else{
-            alert("this api not available");
         }
     }
 
     function GET(apiName,success,fail){
+        apiName = getApiByName(apiName)?getApiByName(apiName):apiName;
         $.ajax({
             method: 'GET',
-            url: getApiByName(apiName),
-            dataType: 'json',
-            contentType: 'application/json',
+            url: apiName,
             beforeSend: function (xhr){ 
                 xhr.setRequestHeader('Authorization', storage.getToken()); 
             },

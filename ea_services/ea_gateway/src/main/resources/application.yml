@@ -9,3 +9,6 @@ zuul:
     user:
       path: /api/user/**
       url: http://localhost:8082/user/
+    product:
+      path: /api/product/**
+      url: http://localhost:8083/product/

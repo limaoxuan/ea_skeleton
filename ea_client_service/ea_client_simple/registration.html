@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script src="./storage.js"></script>
 <script src="./api.js"></script>
 <script src="./registration.js"></script>
 <style type="text/css">
@@ -121,8 +122,15 @@
             <input type="password" class="form-control" id="password" placeholder="Password" required="required">
         </div>
 		<div class="form-group">
-            <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Password" required="required">
-        </div>        
+            <input type="password" class="form-control" id="confirm_password" placeholder="Optional, so remember your password!">
+		</div>
+		<div class="form-group">
+			<label for="role">Role</label>
+			<select class="custom-select d-block w-100" id="role" required>
+				<option value="buyer">Buyer</option>
+				<option value="seller">Seller</option>
+			</select>
+		</div>        
         <div class="form-group">
 			<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
 		</div>
