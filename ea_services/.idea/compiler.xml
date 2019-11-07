@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ea_common" />
-        <module name="ea_product" />
         <module name="ea_gateway" />
+        <module name="ea_auth" />
         <module name="ea_user" />
         <module name="ea_hellosb" />
         <module name="ea_order" />
-        <module name="ea_auth" />
+        <module name="ea_product" />
       </profile>
     </annotationProcessing>
   </component>
