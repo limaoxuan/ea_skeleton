@@ -4,8 +4,8 @@ authUrl: http://localhost:9999
 zuul:
   routes:
     test:
-      path: /test/**
+      path: /api/test/**
       url: http://localhost:8081/test/
     user:
-      path: /user/**
+      path: /api/user/**
       url: http://localhost:8082/user/

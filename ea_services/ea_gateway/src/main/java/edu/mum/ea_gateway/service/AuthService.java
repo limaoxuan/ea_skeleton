@@ -19,7 +19,7 @@ public class AuthService {
     public boolean verify(String token){
         ResponseEntity<Boolean> responseEntity = restTemplate.getForEntity(authUrl+"/auth/verify/"+token,Boolean.class);
         if (responseEntity.getStatusCode()== HttpStatus.OK){
-            return responseEntity.getBody();
+            return true;
         }
         return false;
     }

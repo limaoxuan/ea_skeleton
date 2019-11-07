@@ -45,7 +45,7 @@ public class PreFilter extends ZuulFilter {
     public Object run() throws ZuulException {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
-
+        System.out.println(request.getRequestURL());
         for (String url : excludeUrls){
             if (request.getRequestURL().toString().contains(url)){
                 return null;

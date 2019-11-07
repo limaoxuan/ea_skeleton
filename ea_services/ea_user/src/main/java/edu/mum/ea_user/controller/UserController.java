@@ -54,7 +54,8 @@ public class UserController {
         Map<String,Object> map = new HashMap<>();
 
         map.put("token",response.getBody());
-        map.put("roles","user");
+        map.put("role","user");
+        map.put("email",user.getEmail());
         return new Result(true,StatusCode.OK,"Login Suc",map);
     }
 
